@@ -1,0 +1,68 @@
+{
+  "name": "history-util",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ztx09401515/rc-nav"
+  },
+  "description": "react navigation",
+  "keywords": [
+    "react",
+    "nav",
+    "navigation",
+    "rc-nav"
+  ],
+  "main": "index.js",
+  "files": [
+    "lib",
+    "fonts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-dev": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "path-to-regexp": "^2.2.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "underscore": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/plugin-transform-typescript": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
+    "@types/history": "^4.6.2",
+    "@types/react": "^16.3.14",
+    "@types/underscore": "^1.8.8",
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-core": "^7.0.0-beta.3",
+    "babel-loader": "^8.0.0-beta.3",
+    "babel-plugin-react-css-modules": "^3.4.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-typescript": "^7.0.0-alpha.19",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-watch": "^5.0.0",
+    "highlight.js": "^9.12.0",
+    "history": "^4.7.2",
+    "mini-css-extract-plugin": "^0.4.0",
+    "react-dom": "^16.3.2",
+    "react-syntax-highlighter": "^7.0.4",
+    "refractor": "^2.4.1",
+    "through2": "^2.0.3",
+    "typescript": "^2.8.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
