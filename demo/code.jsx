@@ -4,7 +4,7 @@ import hljs from 'highlight.js';
 window.addEventListener('load', function () {
     const codeString="import React from 'react';\n" +
         "import ReactDOM from 'react-dom';\n" +
-        "import {pushParam,mapParam} from '../src/historyutil.ts';\n" +
+        "import {pushParam, mapParam} from '../src/historyutil.ts';\n" +
         "import {createBrowserHistory} from 'history'\n" +
         "\n" +
         "\n" +
@@ -32,16 +32,25 @@ window.addEventListener('load', function () {
         "    render() {\n" +
         "        let state = this.state;\n" +
         "        return <div>\n" +
-        "            <label>paramName:</label> <input type=\"text\" onKeyPress={(e) => {\n" +
-        "            var event = e.nativeEvent, value = this.refs.valueInput.value;\n" +
-        "            this.enter(event, value);\n" +
-        "        }} onChange={(e) => {\n" +
-        "            this.setState({paramName: e.target.value})\n" +
-        "        }}/>\n" +
-        "            <label>paramValue:</label><input ref={'valueInput'} type=\"text\" onKeyPress={(e) => {\n" +
-        "            var event = e.nativeEvent, value = e.target.value;\n" +
-        "            this.enter(event, value);\n" +
-        "        }}/>\n" +
+        "            <div>\n" +
+        "                <label>paramName(array:&lt;name&gt;[],eg:listnames[]):</label>\n" +
+        "                <input type=\"text\" onKeyPress={(e) => {\n" +
+        "                    var event = e.nativeEvent, value = this.refs.valueInput.value;\n" +
+        "                    this.enter(event, value);\n" +
+        "                }} onChange={(e) => {\n" +
+        "                    this.setState({paramName: e.target.value})\n" +
+        "                }}/>\n" +
+        "            </div>\n" +
+        "            <div>\n" +
+        "                <label>paramValue(array:&lt;value1&gt;&&lt;value2&gt;,eg:name1&name2):</label>\n" +
+        "                <input ref={'valueInput'}\n" +
+        "                       type=\"text\"\n" +
+        "                       onKeyPress={(e) => {\n" +
+        "                           var event = e.nativeEvent,\n" +
+        "                               value = e.target.value;\n" +
+        "                           this.enter(event, value);\n" +
+        "                       }}/>\n" +
+        "            </div>\n" +
         "            <div>\n" +
         "                <h3>Params</h3>\n" +
         "                {mapParam(this.history, (value, index) => {\n" +
