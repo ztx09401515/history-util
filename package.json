@@ -5,17 +5,15 @@
     "type": "git",
     "url": "https://github.com/ztx09401515/history-util"
   },
-  "description": "react navigation",
+  "description": "History Util",
   "keywords": [
-    "react",
-    "nav",
-    "navigation",
-    "rc-nav"
+    "history",
+    "history-util",
+    "util"
   ],
   "main": "index.js",
   "files": [
-    "lib",
-    "fonts"
+    "lib"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
